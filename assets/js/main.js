@@ -246,9 +246,11 @@
 
   if (avatarVideo) {
     function keepAvatarVideoPlaying() {
-      const playRequest = avatarVideo.play();
-      if (playRequest && typeof playRequest.catch === 'function') {
-        playRequest.catch(() => {});
+      if (avatarVideo.paused) {
+        const playRequest = avatarVideo.play();
+        if (playRequest && typeof playRequest.catch === 'function') {
+          playRequest.catch(() => {});
+        }
       }
     }
 
@@ -257,6 +259,8 @@
     document.addEventListener('visibilitychange', () => {
       if (!document.hidden) keepAvatarVideoPlaying();
     });
+
+    setInterval(keepAvatarVideoPlaying, 3000);
 
     const heroMuteToggle = document.querySelector('#hero-mute-toggle');
     if (heroMuteToggle) {
@@ -279,6 +283,26 @@
 
   const aboutVideo = document.querySelector('.about-video');
   const aboutMuteToggle = document.querySelector('#about-mute-toggle');
+
+  if (aboutVideo) {
+    function keepAboutVideoPlaying() {
+      if (aboutVideo.paused) {
+        const playRequest = aboutVideo.play();
+        if (playRequest && typeof playRequest.catch === 'function') {
+          playRequest.catch(() => {});
+        }
+      }
+    }
+
+    keepAboutVideoPlaying();
+    aboutVideo.addEventListener('canplay', keepAboutVideoPlaying, { once: true });
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) keepAboutVideoPlaying();
+    });
+
+    setInterval(keepAboutVideoPlaying, 3000);
+  }
+
   if (aboutVideo && aboutMuteToggle) {
     aboutMuteToggle.addEventListener('click', () => {
       aboutVideo.muted = !aboutVideo.muted;
