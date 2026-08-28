@@ -47,6 +47,40 @@
   });
 
   /**
+   * Theme toggle
+   */
+  const themeToggleBtn = document.querySelector('#theme-toggle');
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+  }
+
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    });
+  }
+
+  function updateThemeIcon(theme) {
+    if (!themeToggleBtn) return;
+    const icon = themeToggleBtn.querySelector('i');
+    if (theme === 'light') {
+      icon.classList.remove('bi-moon-stars');
+      icon.classList.add('bi-sun');
+      themeToggleBtn.setAttribute('aria-label', 'Toggle dark mode');
+    } else {
+      icon.classList.remove('bi-sun');
+      icon.classList.add('bi-moon-stars');
+      themeToggleBtn.setAttribute('aria-label', 'Toggle light mode');
+    }
+  }
+
+  /**
    * Hide mobile nav on same-page/hash links
    */
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
