@@ -37,6 +37,15 @@
     mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
   }
 
+  document.addEventListener('click', (e) => {
+    const navmenu = document.querySelector('.navmenu');
+    if (navmenu && e.target !== navmenu && !navmenu.contains(e.target) && e.target !== mobileNavToggleBtn && !mobileNavToggleBtn.contains(e.target)) {
+      if (document.body.classList.contains('mobile-nav-active')) {
+        mobileNavToogle();
+      }
+    }
+  });
+
   /**
    * Hide mobile nav on same-page/hash links
    */
