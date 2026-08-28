@@ -212,7 +212,6 @@
 
   if (avatarVideo) {
     function keepAvatarVideoPlaying() {
-      avatarVideo.muted = true;
       const playRequest = avatarVideo.play();
       if (playRequest && typeof playRequest.catch === 'function') {
         playRequest.catch(() => {});
@@ -223,6 +222,43 @@
     avatarVideo.addEventListener('canplay', keepAvatarVideoPlaying, { once: true });
     document.addEventListener('visibilitychange', () => {
       if (!document.hidden) keepAvatarVideoPlaying();
+    });
+
+    const heroMuteToggle = document.querySelector('#hero-mute-toggle');
+    if (heroMuteToggle) {
+      heroMuteToggle.addEventListener('click', () => {
+        avatarVideo.muted = !avatarVideo.muted;
+        if (avatarVideo.muted) {
+          heroMuteToggle.classList.add('is-muted');
+          heroMuteToggle.classList.remove('is-unmuted');
+          heroMuteToggle.setAttribute('aria-label', 'Unmute video');
+          heroMuteToggle.innerHTML = '<i class="bi bi-volume-mute"></i>';
+        } else {
+          heroMuteToggle.classList.remove('is-muted');
+          heroMuteToggle.classList.add('is-unmuted');
+          heroMuteToggle.setAttribute('aria-label', 'Mute video');
+          heroMuteToggle.innerHTML = '<i class="bi bi-volume-up"></i>';
+        }
+      });
+    }
+  }
+
+  const aboutVideo = document.querySelector('.about-video');
+  const aboutMuteToggle = document.querySelector('#about-mute-toggle');
+  if (aboutVideo && aboutMuteToggle) {
+    aboutMuteToggle.addEventListener('click', () => {
+      aboutVideo.muted = !aboutVideo.muted;
+      if (aboutVideo.muted) {
+        aboutMuteToggle.classList.add('is-muted');
+        aboutMuteToggle.classList.remove('is-unmuted');
+        aboutMuteToggle.setAttribute('aria-label', 'Unmute video');
+        aboutMuteToggle.innerHTML = '<i class="bi bi-volume-mute"></i>';
+      } else {
+        aboutMuteToggle.classList.remove('is-muted');
+        aboutMuteToggle.classList.add('is-unmuted');
+        aboutMuteToggle.setAttribute('aria-label', 'Mute video');
+        aboutMuteToggle.innerHTML = '<i class="bi bi-volume-up"></i>';
+      }
     });
   }
 
