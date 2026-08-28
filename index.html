@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Victorious Studio | Web Developer Portfolio</title>
+  <meta name="description" content="Victorious Studio is the personal web developer portfolio of Madel Yesha Ago, focused on responsive websites, UI design, and practical digital solutions.">
+  <meta name="keywords" content="Victorious Studio, web developer, portfolio, Bootstrap, frontend developer, responsive website">
+
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header id="header" class="header">
+    <div class="container">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="Victorious Studio logo">
+        <span class="sitename">Victorious <em>Studio</em></span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#content">Content</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#awards">Awards</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-cta">
+        <a href="#contact" class="btn btn-sm">Let's Talk <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="hero-content">
+              <span class="eyebrow"><span class="eyebrow-dot"></span> Available for select projects</span>
+              <h1>Websites that feel as good as they <span class="highlight">look.</span></h1>
+              <p class="hero-subtitle"><span class="typed" data-typed-items="Web Developer, Frontend Builder, UI Designer, Bootstrap Developer"></span></p>
+              <p class="hero-desc">I'm Madel Yesha Ago, the developer behind Victorious Studio. I turn early ideas into responsive, thoughtful digital experiences—with a clean visual language and code that feels as considered as the design.</p>
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary"><span>View Projects</span> <i class="bi bi-arrow-right"></i></a>
+                <a href="#contact" class="btn btn-ghost"><span>Let's Work Together</span></a>
+                <a href="#" class="btn btn-link"><span>Resume</span> <i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="hero-image" data-aos="fade-up" data-aos-delay="200">
+              <div class="hero-image-frame hero-image-frame--video">
+                <video class="hero-video" id="hero-avatar-video" autoplay muted loop playsinline preload="auto" poster="assets/img/victorious-logo.jpg" aria-label="Animated portrait of Madel Yesha Ago">
+                  <source src="assets/video/MAKE_THIS_IMAGE_LIVE_VIDEO.mp4" type="video/mp4">
+                  Your browser does not support the homepage portrait video.
+                </video>
+                <div class="hero-image-shade"></div>
+                <span class="hero-live-badge"><span class="hero-live-dot"></span> LIVE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row metrics-row mt-5" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-12">
+            <div class="metrics">
+              <div class="metric">
+                <strong>06<span>+</span></strong>
+                <span>Web concepts and practice builds</span>
+              </div>
+              <div class="metric">
+                <strong>05</strong>
+                <span>Core tools: HTML, CSS, Bootstrap, JavaScript, Figma</span>
+              </div>
+              <div class="metric">
+                <strong>100<span>%</span></strong>
+                <span>Responsive-first mindset</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>About Me</h2>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+            <h3>Founder mindset,<br>engineer's craft.</h3>
+            <p>I'm Madel Yesha Ago, the developer behind <strong>Victorious Studio</strong>. I build responsive, user-friendly websites and digital experiences—with clean code, thoughtful design, and practical solutions for businesses and individuals.</p>
+            <p>My focus is simple: turn ideas into websites that feel professional and work reliably across every screen. From portfolios to student systems, small business sites to creative brand pages.</p>
+
+            <ul class="about-topics">
+              <li>Websites</li>
+              <li>UI Design</li>
+              <li>Portfolio Sites</li>
+              <li>Digital Invitations</li>
+              <li>Student Systems</li>
+            </ul>
+
+            <blockquote>
+              <p>"I don't just build pages — I build experiences that help ideas look and work their best."</p>
+            </blockquote>
+          </div>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-visual about-visual--cropped">
+              <video autoplay muted loop playsinline preload="auto" poster="assets/img/victorious-logo.jpg" class="about-video">
+                <source src="assets/video/video2.mp4" type="video/mp4">
+                Your browser does not support the video.
+              </video>
+            </div>
+
+            <div class="about-stats">
+              <div class="stat">
+                <strong>06<span>+</span></strong>
+                <span>Years Experience</span>
+              </div>
+              <div class="stat">
+                <strong>06<span>+</span></strong>
+                <span>Projects Delivered</span>
+              </div>
+              <div class="stat">
+                <strong>05</strong>
+                <span>Core Technologies</span>
+              </div>
+              <div class="stat">
+                <strong>06<span>+</span></strong>
+                <span>Practice Builds</span>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-primary mt-4"><span>Start a Project</span> <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- Content / Builder's Table Section -->
+    <section id="content" class="content section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <h2>The Builder's Table,<br>real stories behind the code.</h2>
+            <p class="section-subtitle">Beyond building websites, I create content that helps others learn, grow, and build better.</p>
+          </div>
+        </div>
+
+        <div class="content-grid">
+          <div class="content-item" data-aos="fade-up" data-aos-delay="100">
+            <a href="https://www.facebook.com/profile.php?id=61590648817134" target="_blank" rel="noopener noreferrer" class="content-card">
+              <div class="content-card-image">
+                <img src="assets/img/logo.png" alt="Victorious Studio Facebook Page">
+              </div>
+              <div class="content-card-body">
+                <h3>Victorious Studio <i class="bi bi-facebook"></i></h3>
+                <p>Follow for web development tips, project updates, and behind-the-scenes content.</p>
+                <span class="content-card-meta">Like and follow for more</span>
+              </div>
+            </a>
+          </div>
+          <div class="content-item" data-aos="fade-up" data-aos-delay="300">
+            <a href="https://www.instagram.com/victorious128399/" target="_blank" rel="noopener noreferrer" class="content-card">
+              <div class="content-card-image">
+                <img src="assets/img/logo.png" alt="Victorious Studio Instagram">
+              </div>
+              <div class="content-card-body">
+                <h3>Victorious Studio <i class="bi bi-instagram"></i></h3>
+                <p>Follow for design inspiration, project previews, and creative updates.</p>
+                <span class="content-card-meta">@victorious128399</span>
+              </div>
+            </a>
+          </div>
+          <div class="content-item" data-aos="fade-up" data-aos-delay="200">
+            <a href="#" class="content-card content-card--placeholder">
+              <div class="content-card-placeholder">
+                <span class="content-card-play"><i class="bi bi-play-fill"></i></span>
+                <span class="content-card-pill">COMING SOON</span>
+              </div>
+              <div class="content-card-body">
+                <h3>More episodes on the way</h3>
+                <p>New guests and their stories are being lined up — stay tuned.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Content Section -->
+
+    <!-- Tech Stack Section -->
+    <section id="stack" class="stack section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Tools I use to<br>build great products.</h2>
+        </div>
+
+        <div class="stack-grid">
+          <div class="stack-col" data-aos="fade-up" data-aos-delay="100">
+            <h4>Frontend</h4>
+            <ul class="stack-list">
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5">
+                <span>HTML</span>
+              </li>
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3">
+                <span>CSS</span>
+              </li>
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                <span>Bootstrap</span>
+              </li>
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript">
+                <span>JavaScript</span>
+              </li>
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma">
+                <span>Figma</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="stack-col" data-aos="fade-up" data-aos-delay="200">
+            <h4>Backend &amp; Data</h4>
+            <ul class="stack-list">
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP">
+                <span>PHP</span>
+              </li>
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL">
+                <span>MySQL</span>
+              </li>
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                <span>Bootstrap</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="stack-col" data-aos="fade-up" data-aos-delay="300">
+            <h4>Tools</h4>
+            <ul class="stack-list">
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git">
+                <span>Git</span>
+              </li>
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma">
+                <span>Figma</span>
+              </li>
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                <span>Bootstrap</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="stack-col" data-aos="fade-up" data-aos-delay="400">
+            <h4>Design</h4>
+            <ul class="stack-list">
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma">
+                <span>Figma</span>
+              </li>
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS">
+                <span>CSS</span>
+              </li>
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                <span>Bootstrap</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Tech Stack Section -->
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Work that ships,<br>and works.</h2>
+        </div>
+
+        <div class="projects-filters" data-aos="fade-up" data-aos-delay="100">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Platforms</button>
+          <button class="filter-btn" data-filter="systems">Systems</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-item" data-aos="fade-up" data-aos-delay="100" data-category="web">
+            <a href="https://digital-business-card-one-liard.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-card">
+              <div class="project-card-image">
+                <img src="assets/img/portfolio/digital-business-card.png" alt="Digital Business Card">
+              </div>
+              <div class="project-card-body">
+                <span class="project-category">Interactive Website</span>
+                <h3>Digital Business Card <i class="bi bi-arrow-up-right"></i></h3>
+                <p>A polished online business card that presents key professional information in a compact, accessible format.</p>
+                <div class="project-tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+                <span class="project-link-text">View project <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+
+          <div class="project-item" data-aos="fade-up" data-aos-delay="200" data-category="web">
+            <a href="https://christening-e-invitation.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-card">
+              <div class="project-card-image">
+                <img src="assets/img/portfolio/christening-invitation.png" alt="Christening E-Invitation">
+              </div>
+              <div class="project-card-body">
+                <span class="project-category">Event Website</span>
+                <h3>Christening E-Invitation <i class="bi bi-arrow-up-right"></i></h3>
+                <p>A responsive digital invitation that brings event details and a meaningful visual experience together online.</p>
+                <div class="project-tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+                <span class="project-link-text">View project <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+
+          <div class="project-item" data-aos="fade-up" data-aos-delay="300" data-category="web">
+            <a href="https://christianlifecenter.rf.gd/" target="_blank" rel="noopener noreferrer" class="project-card">
+              <div class="project-card-image">
+                <img src="assets/img/portfolio/Screenshot 2026-08-28 050259.png" alt="Christian Life Center Isulan" onerror="this.src='assets/img/victorious-logo.jpg'">
+              </div>
+              <div class="project-card-body">
+                <span class="project-category">Church Website</span>
+                <h3>Christian Life Center Isulan <i class="bi bi-arrow-up-right"></i></h3>
+                <p>A welcoming church website for Christian Life Center Isulan, built for community engagement, service information, and online presence.</p>
+                <div class="project-tags">
+                  <span>PHP</span><span>CSS</span><span>JavaScript</span>
+                </div>
+                <span class="project-link-text">Visit site <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Projects Section -->
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Where I've built<br>and shipped.</h2>
+        </div>
+
+        <div class="experience-list">
+          <div class="experience-item" data-aos="fade-up" data-aos-delay="100">
+            <span class="experience-number">01</span>
+            <div class="experience-content">
+              <div class="experience-logo">
+                <img src="assets/img/victorious-logo.jpg" alt="Victorious Studio">
+              </div>
+              <h3>Freelance Web Developer</h3>
+              <p class="experience-company">Victorious Studio <span class="experience-period">Present</span></p>
+              <p>Building responsive websites, digital experiences, and practical web solutions for clients—combining clean design with reliable frontend code.</p>
+            </div>
+          </div>
+
+          <div class="experience-item" data-aos="fade-up" data-aos-delay="200">
+            <span class="experience-number">02</span>
+            <div class="experience-content">
+              <div class="experience-logo">
+                <img src="assets/img/victorious-logo.jpg" alt="Practice Projects">
+              </div>
+              <h3>Frontend Developer</h3>
+              <p class="experience-company">Practice Projects <span class="experience-period">Learning</span></p>
+              <p>Built and refined multiple practice websites including digital business cards, event invitations, and interactive tools to strengthen responsive design skills.</p>
+            </div>
+          </div>
+
+          <div class="experience-item" data-aos="fade-up" data-aos-delay="300">
+            <span class="experience-number">03</span>
+            <div class="experience-content">
+              <div class="experience-logo">
+                <img src="assets/img/victorious-logo.jpg" alt="UI Design">
+              </div>
+              <h3>UI Designer</h3>
+              <p class="experience-company">Personal Projects <span class="experience-period">Design</span></p>
+              <p>Designed clean, user-friendly interfaces and visual systems using Figma—focusing on clarity, accessibility, and responsive layouts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Experience Section -->
+
+    <!-- Awards Section -->
+    <section id="awards" class="awards section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Recognition along<br>the way.</h2>
+        </div>
+
+        <div class="awards-stats" data-aos="fade-up" data-aos-delay="100">
+          <div class="award-stat">
+            <strong>01</strong>
+            <span>Competition Placements</span>
+          </div>
+          <div class="award-stat">
+            <strong>01</strong>
+            <span>Programs Joined</span>
+          </div>
+          <div class="award-stat">
+            <strong>05<span>+</span></strong>
+            <span>Projects Completed</span>
+          </div>
+          <div class="award-stat">
+            <strong>06<span>+</span></strong>
+            <span>Practice Builds</span>
+          </div>
+        </div>
+
+        <div class="awards-grid">
+          <div class="award-card award-card--placeholder" data-aos="fade-up" data-aos-delay="200">
+            <div class="award-card-placeholder">
+              <span class="award-card-pill">COMING SOON</span>
+            </div>
+            <div class="award-card-body">
+              <h3>More awards coming soon</h3>
+              <p>New achievements and recognitions are being lined up — stay tuned.</p>
+            </div>
+          </div>
+
+          <div class="award-card award-card--placeholder" data-aos="fade-up" data-aos-delay="300">
+            <div class="award-card-placeholder">
+              <span class="award-card-pill">COMING SOON</span>
+            </div>
+            <div class="award-card-body">
+              <h3>Stay tuned</h3>
+              <p>More awards and milestones will be added here in the future.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Awards Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7" data-aos="fade-up">
+            <span class="eyebrow">Available for new projects</span>
+            <h2>Let's build something<br>amazing together.</h2>
+            <p>Have a project, collaboration, or idea in mind? Reach out on any channel below.</p>
+          </div>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-list">
+              <a href="mailto:victoriousstudio493@gmail.com" class="contact-item">
+                <span class="contact-number">01</span>
+                <div class="contact-info">
+                  <small>Email</small>
+                  <strong>victoriousstudio493@gmail.com <i class="bi bi-box-arrow-up-right"></i></strong>
+                </div>
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61590648817134" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <span class="contact-number">02</span>
+                <div class="contact-info">
+                  <small>Facebook</small>
+                  <strong>facebook.com/victoriousstudio <i class="bi bi-box-arrow-up-right"></i></strong>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/victorious128399/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <span class="contact-number">03</span>
+                <div class="contact-info">
+                  <small>Instagram</small>
+                  <strong>instagram.com/victorious128399 <i class="bi bi-box-arrow-up-right"></i></strong>
+                </div>
+              </a>
+            </div>
+            <p class="contact-location">Philippines · Remote-friendly worldwide</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#content">Content</a>
+        <a href="#stack">Stack</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61590648817134" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/victorious128399/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="mailto:victoriousstudio493@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span>2026</span> <strong class="sitename">Victorious Studio</strong> <span>All Rights Reserved</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
