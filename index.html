@@ -232,86 +232,138 @@
           <h2>Tools I use to<br>build great products.</h2>
         </div>
 
-        <div class="stack-grid">
-          <div class="stack-col" data-aos="fade-up" data-aos-delay="100">
-            <h4>Frontend</h4>
-            <ul class="stack-list">
-              <li>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5">
-                <span>HTML</span>
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3">
-                <span>CSS</span>
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
-                <span>Bootstrap</span>
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript">
-                <span>JavaScript</span>
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma">
-                <span>Figma</span>
-              </li>
-            </ul>
-          </div>
+        <div class="stack-swiper init-swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-config" style="display:none">{
+            "slidesPerView": 1,
+            "spaceBetween": 24,
+            "loop": true,
+            "autoplay": { "delay": 3000, "disableOnInteraction": false },
+            "pagination": { "el": ".stack-pagination", "clickable": true },
+            "breakpoints": {
+              "640": { "slidesPerView": 2 },
+              "1024": { "slidesPerView": 3 }
+            }
+          }</div>
+          <div class="swiper-wrapper">
 
-          <div class="stack-col" data-aos="fade-up" data-aos-delay="200">
-            <h4>Backend &amp; Data</h4>
-            <ul class="stack-list">
-              <li>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP">
-                <span>PHP</span>
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL">
-                <span>MySQL</span>
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
-                <span>Bootstrap</span>
-              </li>
-            </ul>
-          </div>
+            <div class="swiper-slide stack-card" data-aurora="blue">
+              <div class="stack-card-inner">
+                <div class="stack-card-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5">
+                </div>
+                <h4>HTML5</h4>
+                <div class="stack-card-items">
+                  <span class="stack-chip">HTML5</span>
+                  <span class="stack-chip">HTML</span>
+                </div>
+              </div>
+            </div>
 
-          <div class="stack-col" data-aos="fade-up" data-aos-delay="300">
-            <h4>Tools</h4>
-            <ul class="stack-list">
-              <li>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git">
-                <span>Git</span>
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma">
-                <span>Figma</span>
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
-                <span>Bootstrap</span>
-              </li>
-            </ul>
-          </div>
+            <div class="swiper-slide stack-card" data-aurora="purple">
+              <div class="stack-card-inner">
+                <div class="stack-card-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3">
+                </div>
+                <h4>CSS3</h4>
+                <div class="stack-card-items">
+                  <span class="stack-chip">CSS3</span>
+                  <span class="stack-chip">CSS</span>
+                </div>
+              </div>
+            </div>
 
-          <div class="stack-col" data-aos="fade-up" data-aos-delay="400">
-            <h4>Design</h4>
-            <ul class="stack-list">
-              <li>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma">
-                <span>Figma</span>
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS">
-                <span>CSS</span>
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
-                <span>Bootstrap</span>
-              </li>
-            </ul>
+            <div class="swiper-slide stack-card" data-aurora="blue-green">
+              <div class="stack-card-inner">
+                <div class="stack-card-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                </div>
+                <h4>Bootstrap</h4>
+                <div class="stack-card-items">
+                  <span class="stack-chip">Bootstrap</span>
+                  <span class="stack-chip">Bootstrap</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide stack-card" data-aurora="blue">
+              <div class="stack-card-inner">
+                <div class="stack-card-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript">
+                </div>
+                <h4>JavaScript</h4>
+                <div class="stack-card-items">
+                  <span class="stack-chip">JavaScript</span>
+                  <span class="stack-chip">JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide stack-card" data-aurora="pink">
+              <div class="stack-card-inner">
+                <div class="stack-card-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma">
+                </div>
+                <h4>Figma</h4>
+                <div class="stack-card-items">
+                  <span class="stack-chip">Figma</span>
+                  <span class="stack-chip">Figma</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide stack-card" data-aurora="purple">
+              <div class="stack-card-inner">
+                <div class="stack-card-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP">
+                </div>
+                <h4>Backend &amp; Data</h4>
+                <div class="stack-card-items">
+                  <span class="stack-chip">PHP</span>
+                  <span class="stack-chip">PHP</span>
+                  <span class="stack-chip">MySQL</span>
+                  <span class="stack-chip">MySQL</span>
+                  <span class="stack-chip">Bootstrap</span>
+                  <span class="stack-chip">Bootstrap</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide stack-card" data-aurora="green">
+              <div class="stack-card-inner">
+                <div class="stack-card-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git">
+                </div>
+                <h4>Tools</h4>
+                <div class="stack-card-items">
+                  <span class="stack-chip">Git</span>
+                  <span class="stack-chip">Git</span>
+                  <span class="stack-chip">Figma</span>
+                  <span class="stack-chip">Figma</span>
+                  <span class="stack-chip">Bootstrap</span>
+                  <span class="stack-chip">Bootstrap</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide stack-card" data-aurora="pink">
+              <div class="stack-card-inner">
+                <div class="stack-card-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma">
+                </div>
+                <h4>Design</h4>
+                <div class="stack-card-items">
+                  <span class="stack-chip">Figma</span>
+                  <span class="stack-chip">Figma</span>
+                  <span class="stack-chip">CSS</span>
+                  <span class="stack-chip">CSS</span>
+                  <span class="stack-chip">Bootstrap</span>
+                  <span class="stack-chip">Bootstrap</span>
+                </div>
+              </div>
+            </div>
+
           </div>
+          <div class="stack-pagination"></div>
         </div>
       </div>
     </section><!-- /Tech Stack Section -->
